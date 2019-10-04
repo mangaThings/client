@@ -24,10 +24,10 @@ function fetchAllMangas(){
             />
           </div>
           <div class="card-body" style="height: 120px">
-            <p>
-              <b>${el.title}</b>
-            </p>
-            <div class="summary">${el.synopsis}</div>
+          
+          <div class="summary">
+            <b>${el.title}</b> <br/>
+            ${el.synopsis}
           </div>
         </div>
 
@@ -60,10 +60,10 @@ function getDetail(id) {
         />
       </div>
       <div class="card-body" style="height: 120px">
-        <p>
-          <b>${title}</b>
-        </p>
-        <div class="summary">${synopsis}</div>
+        <div class="summary">
+        <b>${title}</b> <br/>
+        ${synopsis}
+        </div>
       </div>
     </div>
     <button class="btn btn-warning mt-3" onclick="getChart(${id})" data-toggle="modal" data-target="#chart">Show Chart</button>
@@ -97,13 +97,13 @@ function getDetail(id) {
       <div class="card-header">
         Comment Netizen
       </div>
-      <div class="card-body" style="height: calc(100vh - 100px)">
+      <div class="card-body" style="height: calc(100vh - 150px)">
         <div id="list-komentar"
-          style="padding: 15px; overflow-y: scroll; width: 100%; height: calc(100vh - 300px)"
+          style="padding: 15px; overflow-y: scroll; width: 100%; height: calc(100vh - 350px)"
         >
           
         </div>
-        <div id="kolom-komentar" style="width:100%; margin-top: 30px;">
+        <div id="kolom-komentar" style="width:100%; margin-top: 30px; padding: 15px;">
             <div class="form-group">
                <input type="text" name="" id="createOp" style: "background: gray">
              </div>

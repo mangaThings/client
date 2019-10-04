@@ -1,3 +1,9 @@
+$("#logo-navbar").click(event => {
+  event.preventDefault();
+  $("#content-mangas-detail").hide();
+  $("#content-mangas-dash").show();
+});
+
 function hideAll() {
   $("#home-page").hide();
   $("#landing-page").hide();

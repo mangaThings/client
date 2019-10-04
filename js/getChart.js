@@ -21,7 +21,7 @@ function getChart(id) {
         case 'negative':
           negative++
           break;
-        case 'netral':
+        case 'neutral':
           netral++
           break;
       }

@@ -9,10 +9,14 @@ $(document).ready(() => {
         hideAll();
         $("#landing-page").show();
       });
+      $("#content-mangas-detail").hide();
+      $("#content-mangas-dash").show();
     } else {
       localStorage.removeItem("token");
       hideAll();
       $("#landing-page").show();
+      $("#content-mangas-detail").hide();
+      $("#content-mangas-dash").show();
     }
   });
 

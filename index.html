@@ -41,7 +41,7 @@
       .summary {
         font-size: 12px;
         white-space: normal;
-        height: 60px;
+        height: 75px;
         overflow: hidden;
         text-overflow: ellipsis;
       }
@@ -73,14 +73,14 @@
     <section
       id="login-page"
       class="flex-center flex-column px-2 align-items:center"
-      style="height: 100vh; display: none;"
+      style="height: 100vh; display: none; background: url('../assets/grey.jpg');"
     >
       <div>
         <!-- Login // id = "login-container" -->
-        <div id="login-container" class="container mt-5">
+        <div id="login-container" class="container">
           <div class="row">
             <div class="col-md-6 offset-md-3">
-              <div class="card">
+              <div class="card mt-5">
                 <div class="card-header">
                   Login
                 </div>
@@ -116,7 +116,7 @@
                     <span>
                       No account ?
                       <a id="linkregister" href="#"><b>Create an account</b></a>
-                      to use Fancy Todo for free!
+                      to use Mangathing for free!
                     </span>
                     <hr />
                     Or you can Sign In with your Google Account
@@ -134,13 +134,13 @@
 
     <!-- REGISTERPAGE -->
     <!-- Start your project here-->
-    <section id="register-page" style="height: 100vh; display: none;">
+    <section id="register-page" style="height: 100vh; display: none; background: url('../assets/grey.jpg');">
       <div class="flex-center flex-column px-2">
         <!-- Login // id = "login-container" -->
-        <div id="login-container" class="container my-5">
+        <div id="login-container" class="container">
           <div class="row">
             <div class="col-md-6 offset-md-3">
-              <div class="card">
+              <div class="card mt-5">
                 <div class="card-header">
                   Register
                 </div>
@@ -205,7 +205,7 @@
         justify-content: space-between;
         align-items: center; height: 100%;"
         >
-          <img src="./img/home.png" style="height: 50px;" alt="" />
+          <img id="logo-navbar" src="./img/home.png" style="height: 50px;" alt="" />
           <button id="logout" class="btn btn-primary">Logout</button>
         </div>
       </div>
