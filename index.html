@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MangaThings</title>
+
+    <meta
+      name="google-signin-client_id"
+      content="951369963210-ontd8mvgldstu6pf2617qk1rulsbjs53.apps.googleusercontent.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Baumans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/materia-bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/landingpage.css" />
+    <style>
+      #navbar {
+        background: #fff;
+        width: 100%;
+        height: 70px;
+        box-shadow: rgb(157, 165, 171) 0px 0px 2.25rem;
+      }
+
+      .fit {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .summary {
+        font-size: 12px;
+        white-space: normal;
+        height: 60px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- LANDINGPAGE -->
+    <section id="landing-page">
+      <div id="landing-container">
+        <div class="appName">
+          <h2>manga</h2>
+          <h1>Things</h1>
+        </div>
+        <div class="description-app">
+          <p>Website for get to know top 12 mangas based on Jikan API.</p>
+        </div>
+        <div class="tracking-in-expand-fwd">
+          <p>We provide opinion section for you</p>
+        </div>
+        <div id="btn-start">
+          <button class="btn btn-primary my-3" id="getstarted">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGINPAGE -->
+    <section
+      id="login-page"
+      class="flex-center flex-column px-2 align-items:center"
+      style="height: 100vh; display: none;"
+    >
+      <div>
+        <!-- Login // id = "login-container" -->
+        <div id="login-container" class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="card">
+                <div class="card-header">
+                  Login
+                </div>
+                <div class="card-body">
+                  <form id="login-form" name="login-form">
+                    <div class="form-group">
+                      <label for="login-email">Email address</label>
+                      <input
+                        autofocus
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="login-email"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="login-password">Password</label>
+                      <input
+                        name="password"
+                        type="password"
+                        class="form-control"
+                        id="login-password"
+                        placeholder="Password"
+                      />
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary">
+                      Login
+                    </button>
+                    <hr />
+                    <span>
+                      No account ?
+                      <a id="linkregister" href="#"><b>Create an account</b></a>
+                      to use Fancy Todo for free!
+                    </span>
+                    <hr />
+                    Or you can Sign In with your Google Account
+                    <div class="g-signin2 mt-2" data-onsuccess="onSignIn"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END LOGIN -->
+      </div>
+    </section>
+    <!-- Start your project here-->
+
+    <!-- REGISTERPAGE -->
+    <!-- Start your project here-->
+    <section id="register-page" style="height: 100vh; display: none;">
+      <div class="flex-center flex-column px-2">
+        <!-- Login // id = "login-container" -->
+        <div id="login-container" class="container my-5">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="card">
+                <div class="card-header">
+                  Register
+                </div>
+                <div class="card-body">
+                  <form id="register-form" name="register-form">
+                    <div class="form-group">
+                      <label for="reg-name"> Your Name </label>
+                      <input
+                        autofocus
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        id="reg-name"
+                        placeholder="Enter yourname"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="reg-email">Email address</label>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="reg-email"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email"
+                      />
+                      <small id="emailHelp" class="form-text text-muted"
+                        >We'll never share your email with anyone else.</small
+                      >
+                    </div>
+                    <div class="form-group">
+                      <label for="reg-password">Password</label>
+                      <input
+                        name="password"
+                        type="password"
+                        class="form-control"
+                        id="reg-password"
+                        placeholder="Password"
+                      />
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary">
+                      Register
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END LOGIN -->
+      </div>
+      <!-- Start your project here-->
+    </section>
+
+    <!-- HOMEPAGE -->
+    <section id="home-page">
+      <div id="navbar">
+        <div
+          class="container"
+          style="display: flex;
+        justify-content: space-between;
+        align-items: center; height: 100%;"
+        >
+          <img src="./img/home.png" style="height: 50px;" alt="" />
+          <button id="logout" class="btn btn-primary">Logout</button>
+        </div>
+      </div>
+      <!-- <div id="sidebar"></div> -->
+      <div id="content" class="my-5" style="width:100%">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div style="width:100%; padding-top:100%; position:relative">
+                  <img
+                    src="https://via.placeholder.com/150"
+                    class="fit"
+                    alt="card image"
+                  />
+                </div>
+                <div class="card-body" style="height: 120px">
+                  <p>
+                    <b>Manga title</b>
+                  </p>
+                  <div class="summary">Lorem ipsum synopsys</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/spa.js"></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </body>
+</html>

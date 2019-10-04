@@ -105,8 +105,16 @@
 
   #landing-page {
     background: url('../assets/grey.jpg');
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center
+  }
+
+  #btn-start {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
