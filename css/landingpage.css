@@ -1,0 +1,112 @@
+.appName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .appName h2 {
+    color: rgb(247, 244, 244);
+    font-family: 'Baloo Tammudu', cursive;
+    font-size: 65pt;
+  }
+
+  .appName h1 {
+    color: #74befc;
+    font-family: 'Baloo Tammudu', cursive;
+    font-size: 72pt;
+  }
+
+  .description-app p {
+    color: white;
+    font-family: 'Baumans', cursive;
+    font-size: 18pt;
+    text-align: center
+  }
+
+  .description-app p {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+      typing 4.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+
+  .tracking-in-expand-fwd {
+    color: #fc9856;
+    font-family: 'Baumans', cursive;
+    text-align: center;
+    font-size: 18pt;
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-delay: 4.2s;
+  }
+
+  @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0.6;
+    }
+
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+
+  #landing-page {
+    background: url('../assets/grey.jpg');
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
