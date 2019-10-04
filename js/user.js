@@ -34,6 +34,7 @@ $(document).ready(() => {
         localStorage.setItem("token", data.token);
         hideAll();
         $("#home-page").show();
+        fetchAllMangas();
       })
       .fail(err => {
         resetRegister();
@@ -61,6 +62,7 @@ $(document).ready(() => {
         localStorage.setItem("token", data.token);
         hideAll();
         $("#home-page").show();
+        fetchAllMangas();
       })
       .fail(err => {
         resetLogin();
