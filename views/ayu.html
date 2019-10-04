@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manga Things</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Baumans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/materia-bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/landingpage.css">
+</head>
+<body>
+  <div id="navbar" >
+    <ul>
+    <li>Log In</li>
+    <li>Register</li>
+  </ul>
+</div>
+  <section id="landing-page" >
+    <div id="get-started">
+      <div class="appName">
+        <h2>manga</h2>
+        <h1>Things</h1>
+      </div>
+      <div class="description-app">
+        <p>Website for get to know top 12 mangas based on Jikan API. </p>
+      </div>
+      <div class="tracking-in-expand-fwd">
+        <p>We provide review section for you</p>
+      </div>
+    </div>
+  </section>
+  <div id="navbarUser">
+      <ul>
+        <li>Home</li>
+        <li>Log Out</li>
+    </ul>
+  </div>
+  <section id="manga-dashboard" >
+    <div id="board">
+      <div class="container">
+        <div class="row justify-content-center">
+          </div>      
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="onemanga">
+    <div class="information">
+      <div class="descriptive"></div>
+    </div>
+    <div class="showComments">
+      <h1>Our Member Opinions</h1>
+      <div class="scrolldown">
+        <div class="get-comments"></div>
+      </div>
+      <div class="diboxin">
+        <h2>Tell your opinion</h2>
+        <div class="create-opinion">
+          <input type="text" name="" id="createOp">
+          <button class="btn btn-warning" style="width:15%; height: '40px';">Submit</button>
+        </div>
+      </div>
+      <div class="toggle-chart">
+      </div>
+    </div>
+  </section>
+  <div class="image-chart"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./script/getAllMangas.js"></script>
+  <script src="./script/getChart.js"></script>
+  <script>
+    // let baseUrl = 'http://localhost:3000'
+  </script>
+  <style>
+    #onemanga{
+      height: calc(100vh - 60px);
+      display: flex;
+      justify-content: flex-start;
+    }
+    .information{
+      width: 55vw;
+      background: blueviolet;
+      height: 100%;
+    }
+    .showComments{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 45vw;
+      padding: 50px;
+      background: rgb(75, 73, 70);
+      height: 100%;
+    }
+    .showComments h1{
+      text-align: left;
+      align-self: flex-start;
+      margin-top: 20px;
+      color: rgb(149, 224, 35)
+    }
+    .scrolldown{
+      margin-top: 20px;
+      height: 260px;
+      width: 100%;
+      background: white
+    }
+    .create-opinion{
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+    }
+    #createOp{
+    width: 83%;
+    height: 40px;
+    font-size: 12pt;
+    }
+    .diboxin{
+      width: 100%
+    }
+    .diboxin h2{
+      margin-top: 20px;
+      color: rgb(236, 227, 227)
+    }
+  </style>
+</body>
+
+</html>
